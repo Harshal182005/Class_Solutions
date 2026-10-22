@@ -214,18 +214,32 @@
 #     case _:
 #         print("Page not found!!")
 
-oper = input("Enter any operator (+,-,*,/)")
-a = 10
-b = 20
+# oper = input("Enter any operator (+,-,*,/)")
+# a = 10
+# b = 20
 
-match oper:
-    case "+" :
-        print(F"Addition of {a} + {b} =",a+b)
-    case "-":
-        print(F"Substraction of {a}-{b} = ",a-b)
-    case "*":
-        print(F"Multiplication of {a} * {b} = ",a*b)
-    case "/":
-        print(F"Division of {a} / {b} =",a/b)
-    case _:
-        print("Not valid")
+# match oper:
+#     case "+" :
+#         print(F"Addition of {a} + {b} =",a+b)
+#     case "-":
+#         print(F"Substraction of {a}-{b} = ",a-b)
+#     case "*":
+#         print(F"Multiplication of {a} * {b} = ",a*b)
+#     case "/":
+#         print(F"Division of {a} / {b} =",a/b)
+#     case _:
+#         print("Not valid")
+
+name = input("Enter your name: ").strip().lower()
+has_vowel = False
+
+for letter in name:
+    match letter:
+        case "a" | "e" | "i" | "o" | "u":
+            has_vowel = True
+            break
+
+if has_vowel:
+    print("contains a vowel.")
+else:
+    print("does not contain a vowel.")
