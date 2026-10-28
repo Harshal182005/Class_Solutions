@@ -230,16 +230,58 @@
 #     case _:
 #         print("Not valid")
 
-name = input("Enter your name: ").strip().lower()
-has_vowel = False
+# name = input("Enter your name: ").strip().lower()
+# has_vowel = False
+# cnt = 0
 
-for letter in name:
-    match letter:
-        case "a" | "e" | "i" | "o" | "u":
-            has_vowel = True
-            break
+# for letter in name:
+#     match letter:
+#         case "a" | "e" | "i" | "o" | "u":
+#             has_vowel = True
+#             break
 
-if has_vowel:
-    print("contains a vowel.")
-else:
-    print("does not contain a vowel.")
+# if has_vowel:
+#     print("contains a vowel.",cnt)
+    
+# else:
+#     print("does not contain a vowel.")
+
+#-----------------------------------
+# num = 12345
+# sum = 0
+
+# while num>0:
+#     digit = num % 10
+#     sum = sum + digit
+#     num = num//10
+
+# print(sum)
+
+# *
+# **
+# ***
+# ****
+
+# n = int(input("Enter how much"))
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         print("*",end = "")
+#     print()
+
+
+# 1
+# 121
+# 12321
+# 1234321
+
+n = int(input("Enter number --->"))
+
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end = "")
+    for k in range(i-1,0,-1):
+        print(k,end="")
+    print()
+
+    
+    
