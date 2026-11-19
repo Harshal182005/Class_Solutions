@@ -53,10 +53,36 @@
 # cust(name="John", price=85, city="New York")
 
 
-def total_marks(*args):
-    total = 0
-    for mark in args:
-        total += mark
-    return total
-total = total_marks(85, 90, 78, 92, 88)
-print(f"Total marks: {total}")
+# def total_marks(*args):
+#     total = 0
+#     for mark in args:
+#         total += mark
+#     return total
+# total = total_marks(85, 90, 78, 92, 88)
+# print(f"Total marks: {total}")
+
+# def largest(*args):
+#     largest = args[0]
+#     for num in args:
+#         if num > largest:
+#             largest = num
+#     return largest
+# print(largest(10, 25, 5, 30, 15))
+
+data = {}
+
+while True:
+    key = input("Enter a key (done if--- finished): ")
+    if key =="done":
+        break
+    if key in data:
+        print("Key already exists. Please enter a different key.")
+        continue
+    value = input("Enter a value: ")
+    data[key] = value
+    
+
+print("Dictionary-------------->", data)
+    
+    
+    
